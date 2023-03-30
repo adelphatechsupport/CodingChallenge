@@ -244,21 +244,217 @@
                     </ul>
                 </div>
                 <div id="CandidatesTable">
-                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Applied" role="tabpanel"
+                    <div class="hidden p-4 rounded-lg" id="Applied" role="tabpanel"
                         aria-labelledby="Applied-tab">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                                class="font-medium text-gray-800 dark:text-white">Profile tab's associated
-                                content</strong>.
-                            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript
-                            swaps classes to control the content visibility and styling.</p>
+                        <div class="relative overflow-x-auto sm:rounded-lg">
+                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                <tbody id="">
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-20.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">John Smith</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>johnsmith@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on
+                                                    September 9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-21.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">Jane Doe</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>janedoe@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on August
+                                                    9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="flex mb-3 pl-5 xl:pr-10 lg:pr-10 md:pr-0 grid grid-cols-1">
+                                <div class="flex justify-between">
+                                    <div class=" Previous">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            <svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            Previous
+                                        </a>
+                                    </div>
+                                    <div class="pagination mt-2">
+                                        <nav aria-label="navigation">
+                                            <ul class="inline-flex items-center -space-x-px ">
+                                                <li>
+                                                    <a href="#" aria-current="1"
+                                                        class="px-3 py-2 leading-tight text-gray-500 bg-white border-t border-indigo-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-transparent dark:border-indigo-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-800">1</a>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="next">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            Next
+                                            <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Phone" role="tabpanel"
+                    <div class="hidden p-4 rounded-lg" id="Phone" role="tabpanel"
                         aria-labelledby="Phone-tab">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                                class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the
-                            next.
-                            The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                        <div class="relative overflow-x-auto sm:rounded-lg">
+                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                <tbody id="">
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-20.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">John Smith</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>johnsmith@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on
+                                                    September 9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-21.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">Jane Doe</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>janedoe@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on August
+                                                    9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="flex mb-3 pl-5 xl:pr-10 lg:pr-10 md:pr-0 grid grid-cols-1">
+                                <div class="flex justify-between">
+                                    <div class=" Previous">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            <svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            Previous
+                                        </a>
+                                    </div>
+                                    <div class="pagination mt-2">
+                                        <nav aria-label="navigation">
+                                            <ul class="inline-flex items-center -space-x-px ">
+                                                <li>
+                                                    <a href="#" aria-current="1"
+                                                        class="px-3 py-2 leading-tight text-gray-500 bg-white border-t border-indigo-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-transparent dark:border-indigo-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-800">1</a>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="next">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            Next
+                                            <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="hidden px-4 rounded-lg" id="Interview" role="tabpanel" aria-labelledby="Interview-tab">
                         <div class="t-table-responsive">
@@ -309,21 +505,216 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Offer" role="tabpanel"
-                        aria-labelledby="Offer-tab">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                                class="font-medium text-gray-800 dark:text-white">Contacts tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the
-                            next.
-                            The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                    <div class="hidden p-4 rounded-lg" id="Offer" role="tabpanel" aria-labelledby="Offer-tab">
+                        <div class="relative overflow-x-auto sm:rounded-lg">
+                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                <tbody id="">
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-20.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">John Smith</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>johnsmith@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on
+                                                    September 9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-21.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">Jane Doe</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>janedoe@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on August
+                                                    9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="flex mb-3 pl-5 xl:pr-10 lg:pr-10 md:pr-0 grid grid-cols-1">
+                                <div class="flex justify-between">
+                                    <div class=" Previous">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            <svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            Previous
+                                        </a>
+                                    </div>
+                                    <div class="pagination mt-2">
+                                        <nav aria-label="navigation">
+                                            <ul class="inline-flex items-center -space-x-px ">
+                                                <li>
+                                                    <a href="#" aria-current="1"
+                                                        class="px-3 py-2 leading-tight text-gray-500 bg-white border-t border-indigo-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-transparent dark:border-indigo-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-800">1</a>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="next">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            Next
+                                            <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Disqualified" role="tabpanel"
+                    <div class="hidden p-4" id="Disqualified" role="tabpanel"
                         aria-labelledby="Disqualified-tab">
-                        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                                class="font-medium text-gray-800 dark:text-white">Contacts tab's associated
-                                content</strong>. Clicking another tab will toggle the visibility of this one for the
-                            next.
-                            The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                        <div class="relative overflow-x-auto sm:rounded-lg">
+                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                <tbody id="">
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-20.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">John Smith</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>johnsmith@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on
+                                                    September 9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b dark:border-gray-300">
+                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                            <div class="flex justify-start items-center">
+                                                <img class="w-10 h-10 rounded-full mr-2"
+                                                    src='assets/media/avatars/150-21.jpg' alt="user photo">
+                                                <div class="flex flex-col">
+                                                    <h6 class="text-indigo-600 mb-2 text-md">Jane Doe</h6>
+                                                    <a href="#"
+                                                        class="text-gray-400 hover:text-primary font-medium text-base mb-2">
+                                                        <i class="fa-solid fa-envelope mr-2"></i>janedoe@example.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="px-6 py-4">
+                                            <div class="flex flex-col">
+                                                <h6 class="text-neutral-900 mb-2 text-md font-meduim">Applied on August
+                                                    9, 2020</h6>
+                                                <a href="#"
+                                                    class="text-gray-400 hover:text-primary font-normal text-base mb-2">
+                                                    <i class="fa-solid fa-circle-check mr-2 text-lime-400"></i>Completed
+                                                    phone screening
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="flex mb-3 pl-5 xl:pr-10 lg:pr-10 md:pr-0 grid grid-cols-1">
+                                <div class="flex justify-between">
+                                    <div class=" Previous">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            <svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            Previous
+                                        </a>
+                                    </div>
+                                    <div class="pagination mt-2">
+                                        <nav aria-label="navigation">
+                                            <ul class="inline-flex items-center -space-x-px ">
+                                                <li>
+                                                    <a href="#" aria-current="1"
+                                                        class="px-3 py-2 leading-tight text-gray-500 bg-white border-t border-indigo-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-transparent dark:border-indigo-700 dark:text-gray-400 dark:hover:bg-transparent dark:hover:text-indigo-800">1</a>
+                                                </li>
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="next">
+                                        <a href="#"
+                                            class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400">
+                                            Next
+                                            <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
